@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | VisionCraft Optics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1060;"></div>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg sticky-top border-bottom">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-glasses text-secondary-brand me-2"></i>
+                <span>VisionCraft</span>
+            </a>
+            
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lenses.html">Lenses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Journal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+                    <a href="#" class="nav-icon position-relative">
+                        <i class="fas fa-heart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-accent" style="font-size: 0.6rem;">0</span>
+                    </a>
+                    <a href="#" class="nav-icon position-relative">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-accent" style="font-size: 0.6rem;">0</span>
+                    </a>
+                    <a href="#" class="nav-icon ms-3" id="themeToggle"><i class="fas fa-moon"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="bg-off-white py-5">
+        <div class="container text-center">
+            <h1 class="fw-bold mb-2" data-aos="fade-down">Eyewear Collection</h1>
+            <nav aria-label="breadcrumb" data-aos="fade-up">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Shop Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar Filters -->
+                <div class="col-lg-3 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="d-flex justify-content-between align-items-center mb-3 d-lg-none">
+                        <h5 class="mb-0">Filters</h5>
+                        <button class="btn btn-outline-secondary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#filterSidebar">
+                            <i class="fas fa-filter"></i> Toggle Filters
+                        </button>
+                    </div>
+                    
+                    <div class="collapse d-lg-block" id="filterSidebar">
+                        <!-- Gender Filter -->
+                        <div class="filter-widget">
+                            <h5 class="filter-title">Gender</h5>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="men">
+                                <label class="form-check-label text-muted" for="men">Men</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="women">
+                                <label class="form-check-label text-muted" for="women">Women</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="unisex" checked>
+                                <label class="form-check-label text-muted" for="unisex">Unisex</label>
+                            </div>
+                        </div>
+
+                        <!-- Frame Type -->
+                        <div class="filter-widget">
+                            <h5 class="filter-title">Frame Type</h5>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="full">
+                                <label class="form-check-label text-muted" for="full">Full Rim</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="half">
+                                <label class="form-check-label text-muted" for="half">Half Rim</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="rimless">
+                                <label class="form-check-label text-muted" for="rimless">Rimless</label>
+                            </div>
+                        </div>
+
+                        <!-- Price -->
+                        <div class="filter-widget">
+                            <h5 class="filter-title">Price Range</h5>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="price" id="price1">
+                                <label class="form-check-label text-muted" for="price1">Under ₹999</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="price" id="price2" checked>
+                                <label class="form-check-label text-muted" for="price2">₹1000 – ₹2999</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="price" id="price3">
+                                <label class="form-check-label text-muted" for="price3">₹3000 – ₹4999</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="price" id="price4">
+                                <label class="form-check-label text-muted" for="price4">₹5000+</label>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-primary-brand w-100 mt-2">Apply Filters</button>
+                    </div>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="col-lg-9" data-aos="fade-up">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <p class="text-muted mb-0">Showing 1-12 of 50 products</p>
+                        <select class="form-select w-auto border-0 bg-off-white text-muted">
+                            <option>Default Sorting</option>
+                            <option>Sort by Popularity</option>
+                            <option>Sort by Price: Low to High</option>
+                            <option>Sort by Price: High to Low</option>
+                        </select>
+                    </div>
+
+                    <div class="row g-4">
+                        <!-- Repeated dummy products to fill the grid -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="product-card">
+                                <div class="product-badge">Bestseller</div>
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                                    <a href="product.html" class="action-btn" title="Quick View"><i class="far fa-eye"></i></a>
+                                    <button class="action-btn" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <div class="product-image-wrap text-center">
+                                    <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?q=80&w=800&auto=format&fit=crop" alt="Product" class="product-img">
+                                </div>
+                                <h3 class="product-title"><a href="product.html">Aviator Classic Gold</a></h3>
+                                <div class="product-price">₹2,499</div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6">
+                            <div class="product-card">
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                                    <a href="product.html" class="action-btn" title="Quick View"><i class="far fa-eye"></i></a>
+                                    <button class="action-btn" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <div class="product-image-wrap text-center">
+                                    <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?q=80&w=800&auto=format&fit=crop" alt="Product" class="product-img">
+                                </div>
+                                <h3 class="product-title"><a href="product.html">Wayfarer Tortoise</a></h3>
+                                <div class="product-price">₹1,999 <span class="old-price">₹2,999</span></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="product-card">
+                                <div class="product-badge bg-danger text-white">-20%</div>
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                                    <a href="product.html" class="action-btn" title="Quick View"><i class="far fa-eye"></i></a>
+                                    <button class="action-btn" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <div class="product-image-wrap text-center">
+                                    <img src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?q=80&w=800&auto=format&fit=crop" alt="Product" class="product-img">
+                                </div>
+                                <h3 class="product-title"><a href="product.html">Round Retro Titanium</a></h3>
+                                <div class="product-price">₹3,499</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="product-card">
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                                    <a href="product.html" class="action-btn" title="Quick View"><i class="far fa-eye"></i></a>
+                                    <button class="action-btn" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <div class="product-image-wrap text-center">
+                                    <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?q=80&w=800&auto=format&fit=crop" alt="Product" class="product-img">
+                                </div>
+                                <h3 class="product-title"><a href="product.html">Clear Blue Blockers</a></h3>
+                                <div class="product-price">₹1,499</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="product-card">
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                                    <a href="product.html" class="action-btn" title="Quick View"><i class="far fa-eye"></i></a>
+                                    <button class="action-btn" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <div class="product-image-wrap text-center">
+                                    <img src="https://images.unsplash.com/photo-1509695507497-903c140c43b0?q=80&w=800&auto=format&fit=crop" alt="Product" class="product-img">
+                                </div>
+                                <h3 class="product-title"><a href="product.html">Cat Eye Elegance</a></h3>
+                                <div class="product-price">₹2,899</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="product-card">
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                                    <a href="product.html" class="action-btn" title="Quick View"><i class="far fa-eye"></i></a>
+                                    <button class="action-btn" title="Add to Cart"><i class="fas fa-shopping-cart"></i></button>
+                                </div>
+                                <div class="product-image-wrap text-center">
+                                    <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=800&auto=format&fit=crop" alt="Product" class="product-img">
+                                </div>
+                                <h3 class="product-title"><a href="product.html">Premium Sport Shades</a></h3>
+                                <div class="product-price">₹4,199</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav class="mt-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item active"><a class="page-link bg-primary-brand border-0" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link text-muted" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link text-muted" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link text-muted" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container text-center">
+            <p class="mb-0 small">&copy; 2026 VisionCraft Optics. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

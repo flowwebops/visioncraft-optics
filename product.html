@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviator Classic Gold | VisionCraft Optics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1060;"></div>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg sticky-top border-bottom">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-glasses text-secondary-brand me-2"></i>
+                <span>VisionCraft</span>
+            </a>
+            
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lenses.html">Lenses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Journal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+                    <a href="#" class="nav-icon position-relative">
+                        <i class="fas fa-heart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-accent" style="font-size: 0.6rem;">0</span>
+                    </a>
+                    <a href="#" class="nav-icon position-relative">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-accent" style="font-size: 0.6rem;">0</span>
+                    </a>
+                    <a href="#" class="nav-icon ms-3" id="themeToggle"><i class="fas fa-moon"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Details Section -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb" class="mb-4">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
+                    <li class="breadcrumb-item"><a href="shop.html" class="text-decoration-none text-muted">Men's Eyewear</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Aviator Classic Gold</li>
+                </ol>
+            </nav>
+
+            <div class="row g-5">
+                <!-- Product Gallery -->
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="product-gallery-main text-center">
+                        <img id="mainProductImg" src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?q=80&w=800&auto=format&fit=crop" alt="Main Product">
+                    </div>
+                    <div class="product-gallery-thumbs mt-3 justify-content-center">
+                        <div class="thumb-item active">
+                            <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?q=80&w=800&auto=format&fit=crop" alt="Thumb 1">
+                        </div>
+                        <div class="thumb-item">
+                            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=800&auto=format&fit=crop" alt="Thumb 2">
+                        </div>
+                        <div class="thumb-item">
+                            <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?q=80&w=800&auto=format&fit=crop" alt="Thumb 3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="d-flex align-items-center mb-2">
+                        <span class="badge bg-danger me-2">Bestseller</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span class="text-muted ms-1">(124 Reviews)</span>
+                        </div>
+                    </div>
+                    
+                    <h1 class="fw-bold mb-3">Aviator Classic Gold</h1>
+                    <div class="product-price mb-4 fs-2">₹2,499 <span class="old-price fs-4">₹3,499</span></div>
+                    
+                    <p class="text-muted mb-4">The Aviator Classic Gold offers an iconic teardrop shape that has stood the test of time. Crafted with a premium metal frame, these glasses are lightweight yet exceptionally durable. Perfect for both casual and formal wear.</p>
+
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <span class="fw-bold d-block mb-1">Frame Color</span>
+                            <div class="d-flex gap-2">
+                                <span class="rounded-circle border" style="width: 25px; height: 25px; background: #FFD700; cursor:pointer;" title="Gold"></span>
+                                <span class="rounded-circle border" style="width: 25px; height: 25px; background: #C0C0C0; cursor:pointer;" title="Silver"></span>
+                                <span class="rounded-circle border" style="width: 25px; height: 25px; background: #000000; cursor:pointer;" title="Black"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <span class="fw-bold d-block mb-1">Size</span>
+                            <select class="form-select form-select-sm w-75 bg-off-white border-0 text-muted">
+                                <option>Medium (54mm)</option>
+                                <option>Large (58mm)</option>
+                                <option>Extra Large (62mm)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <span class="fw-bold d-block mb-2">Select Lenses (Optional)</span>
+                        <select class="form-select bg-off-white border-0 text-muted mb-2">
+                            <option>Frame Only (Zero Power)</option>
+                            <option>Single Vision (+₹999)</option>
+                            <option>Progressive (+₹2499)</option>
+                            <option>Blue Cut/Computer (+₹1499)</option>
+                        </select>
+                    </div>
+
+                    <div class="d-flex gap-3 mb-5">
+                        <div class="input-group w-25">
+                            <button class="btn btn-outline-secondary px-3" type="button">-</button>
+                            <input type="text" class="form-control text-center border-secondary text-muted" value="1">
+                            <button class="btn btn-outline-secondary px-3" type="button">+</button>
+                        </div>
+                        <button class="btn btn-premium flex-grow-1"><i class="fas fa-shopping-cart me-2"></i> Add to Cart</button>
+                        <button class="btn btn-outline-secondary action-btn flex-shrink-0" style="width: 46px; height: 46px; border-radius: 50%;"><i class="far fa-heart"></i></button>
+                    </div>
+
+                    <ul class="list-unstyled text-muted small mb-0">
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> In Stock. Ready to ship.</li>
+                        <li class="mb-2"><i class="fas fa-truck text-secondary-brand me-2"></i> Free standard shipping on orders over ₹1500.</li>
+                        <li><i class="fas fa-undo text-secondary-brand me-2"></i> 14-day hassle-free return policy.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products Placeholder -->
+    <section class="py-5 bg-off-white">
+        <div class="container py-4">
+            <h3 class="fw-bold mb-4 text-center">You May Also Like</h3>
+            <!-- Assuming simple text here to keep files smaller, in reality would use same grid as shop -->
+            <p class="text-center text-muted">More amazing products coming soon...</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-0">
+        <div class="container text-center">
+            <p class="mb-0 small">&copy; 2026 VisionCraft Optics. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
